@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  pocketbase:
+    image: ghcr.io/elotojaa/pocketbase:master
+    container_name: pocketbase
+    volumes:
+      - pocketbase:/data
+    ports:
+      - 8090:8090
+    restart: unless-stopped
+
+volumes:
+  pocketbase:
