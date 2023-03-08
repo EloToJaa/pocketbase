@@ -8,4 +8,4 @@ RUN wget https://github.com/pocketbase/pocketbase/releases/download/v0.13.2/pock
 
 EXPOSE 8090
 
-CMD ["./pocketbase", "serve", "--dir", "/data/pb_data", "--migrationsDir", "/data/pb_migrations", "--publicDir", "/data/pb_public"]
+CMD ["./pocketbase", "serve", "--dir", "/data/pb_data", "--migrationsDir", "/data/pb_migrations", "--publicDir", "/data/pb_public", "--http", "0.0.0.0"]
